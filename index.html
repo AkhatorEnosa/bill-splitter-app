@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+  
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo"><img src="images/logo.svg"></div>
+    <div class="container">
+      <div class="left">
+        <div class="bill">
+          <div class="span1">
+            <p>Bill</p>
+            <span class="error1"></span>
+          </div>
+          <img src="images/icon-dollar.svg" class="icon">
+          <input type="number" class="bill-input">
+        </div>
+
+        <div class="tip">
+          <p>Select Tip %</p>
+          <div class="options">
+            <button type="button" class="option" value="5">5%</button>
+            <button type="button" class="option" value="10">10%</button>
+            <button type="button" class="option" value="15">15%</button>
+            <button type="button" class="option" value="25">25%</button>
+            <button type="button" class="option" value="50">50%</button>
+            <input type="button" class="custom" value="Custom">
+          </div>
+        </div>
+
+        <div class="people-count">
+          <div class="span2">
+            <p>Number of People</p>
+            <span class="error2"></span>
+          </div>
+          <img src="images/icon-person.svg" class="icon">
+          <input type="number" class="people-input">
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="amount">
+          <div class="tip-amount">
+            <div class="tip-left">
+              Tip Amount <br>
+              <span class="little">/ person</span>
+            </div>
+            <div class="tip-right">$0.00</div>
+          </div>
+
+          <div class="total">
+            <div class="total-left">
+              Total <br>
+              <span class="little">/ person</span>
+            </div>
+            <div class="total-right">$0.00</div>
+          </div>
+        </div>
+
+        <div class="reset">
+          <input type="button" class="reset-btn" value="RESET" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script/index.js"></script>
+
+
+</body>
+</html>
