@@ -119,6 +119,7 @@ body{
   margin-top: 20px;
   font-size: 24px;
   border-radius: 5px;
+  text-align: center;
   background: #F3F9FA;
   color: #547878;
   font-weight: bold;
@@ -256,4 +257,16 @@ body{
 
 .reset-btn-active:hover {
   background: #9FE8DF;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #5E7A7D;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #5E7A7D;
+}
+
+::placeholder {
+    color: #5E7A7D;
 }

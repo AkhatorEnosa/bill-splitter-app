@@ -1,9 +1,7 @@
-@media (max-width: 500px), (max-width:550px ) {
+@media (max-width: 700px), (max-width:1050px ) {
   body{
     width: 100vw;
     height: auto;
-    background-color: #C5E4E7;
-    text-align: center;
     font-family: 'Space Mono', monospace !important;
   }
 
@@ -12,43 +10,40 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: auto;
     margin: 0px auto;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .logo {
-    width: 86.66px;
-    height: 53.14px;
+    width: 80px;
+    height: 47px;
     margin: 0px auto;
   }
 
   .container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: white;
-    width: 100%;
+    width: 80vw;
     margin: 0px auto;
-    margin-top: 40px;
-    border-radius: 25px 25px 0px 0px;
-    padding: 0px;
-    padding-bottom: 40px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 25px;
+    padding: 50px;
   }
 
   .left {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 436px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 50%;
+    margin-right: 14px;
   }
-  
+
   .bill {
-    text-align: center;
+    width: 90%;
+    height: 78px;
+    text-align: left;
     font-size: 16px;
     font-weight: bold;
     color: #5E7A7D;
@@ -57,20 +52,10 @@
   .span1 {
     display: flex;
     justify-content: space-between;
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-
-  .span1 span {
-    text-align: left;
-  }
-
-  .span1 .error1 {
-    text-align: right;
   }
 
   .bill-input {
-    width: 83.6%;
+    width: 91.5%;
     height: 48px;
     outline: none;
     border: none;
@@ -91,7 +76,6 @@
   }
 
   .tip {
-    width: 90%;
     height: auto;
     text-align: left;
     font-size: 16px;
@@ -101,11 +85,12 @@
 
   .options {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .option {
-    width: 158px;
+    width: 12vw;
     height: 48px;
     margin-top: 20px;
     background: #00474B;
@@ -126,13 +111,13 @@
   }
 
   .custom {
-    width: 118px;
+    width: 8vw;
     height: 48px;
-    padding-right: 20px;
-    padding-left: 20px;
     margin-top: 20px;
     font-size: 24px;
     border-radius: 5px;
+    padding-right: 2vw;
+    padding-left: 2vw;
     background: #F3F9FA;
     color: #547878;
     font-weight: bold;
@@ -144,7 +129,9 @@
   }
 
   .people-count {
-    text-align: center;
+    width: 90%;
+    height: 78px;
+    text-align: left;
     font-size: 16px;
     font-weight: bold;
     color: #5E7A7D;
@@ -153,20 +140,10 @@
   .span2 {
     display: flex;
     justify-content: space-between;
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-
-  .span2 span {
-    text-align: left;
-  }
-
-  .span2 .error2 {
-    text-align: right;
   }
 
   .people-input {
-    width: 83.6%;
+    width: 91.5%;
     height: 48px;
     outline: none;
     border: none;
@@ -182,31 +159,30 @@
 
   .right {
     display: flex;
-    /* left: 0; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    width: 90%;
-    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 417px;
     background: #00474B;
-    padding-top: 20px;
-    padding-bottom: 20px;
     border-radius: 15px;
-    margin-left: 0px;
-    margin: 0px auto;
+    margin-left: 14px;
   }
 
   .amount {
-    width: 90%; 
-    height: 116px;
-    /* background-color: red;; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 156px; */
   }
 
   .tip-amount {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     font-weight: bold;
   }
 
@@ -225,7 +201,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    height: 80px;
     font-weight: bold;
   }
 
@@ -245,8 +222,12 @@
   }
 
   .reset {
-    width: 100%;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 156px;
+    width: 100%
   }
 
   .reset-btn {
@@ -255,7 +236,6 @@
     background: #0D686D;
     font-size: 20px;
     font-weight: bold;
-    margin: 0px auto;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -278,6 +258,21 @@
 
   .reset-btn-active:hover {
     background: #9FE8DF;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+      color: #5E7A7D;
+      font-size: 1rem;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #5E7A7D;
+      font-size: 1rem;
+  }
+
+  ::placeholder {
+      color: #5E7A7D;
+      font-size: 1rem;
   }
 
 }

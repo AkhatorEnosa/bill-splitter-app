@@ -39,8 +39,8 @@ function getBillInput() {
 
 function getTipValue(e){
    if(e.target.matches(".custom")){
-    custom.type = "number";
-    custom.style = "width: 118px; padding: 0px 20px 0px 20px; text-align: right;";
+    custom.style = "text-align: right;";
+    custom.placeholder = "";
     // custom.style = "width: 77px";
     // custom.style = "padding: 0px 20px 0px 20px";
 
@@ -130,11 +130,9 @@ function reset(){
   billInput.value = peopleInput.value = "";
   billInputVal = peopleInputVal = "";
 
-  if(custom.type = "number"){
-    custom.type = "button";
-    custom.value = "Custom";
+    custom.placeholder = "Custom";
+    custom.value = "";
     custom.style.textAlign = "center";
-  }
 
   var option = document.querySelectorAll(".option");
   option.forEach(x => {
